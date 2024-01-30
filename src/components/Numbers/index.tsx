@@ -36,9 +36,6 @@ const Numbers = () => {
     >
       <Container
         maxWidth="lg"
-        sx={{
-          borderBottom: "1px solid rgba(255, 255, 255, 0.10)",
-        }}
       >
         <Typography variant="h3" textAlign="center" mb={5}>
           Lorem ipsum dolor sit amet
@@ -52,6 +49,7 @@ const Numbers = () => {
               xs: "column",
               md: "row",
             },
+            borderBottom: "1px solid rgba(255, 255, 255, 0.10)",
           }}
         >
           <Box sx={BoxStyle}>
