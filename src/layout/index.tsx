@@ -52,6 +52,7 @@ const theme = createTheme({
       },
     },
     h3: {
+      color: "#FFF",
       fontFamily: "Inter",
       fontSize: "24px",
       fontStyle: "normal",
