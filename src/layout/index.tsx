@@ -70,6 +70,15 @@ const theme = createTheme({
       fontWeight: 400,
       lineHeight: "24px",
     },
+    body2: {
+      color: "#FFF",
+      fontFamily: "Inter",
+      fontSize: "16px",
+      fontStyle: "normal",
+      fontWeight: 600,
+      lineHeight: "24px",
+      marginBottom: "8px"
+    },
   },
   components: {
     MuiContainer: {

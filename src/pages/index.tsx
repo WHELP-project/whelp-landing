@@ -1,6 +1,6 @@
 import * as React from "react"
 import type { HeadFC } from "gatsby"
-import { Seo, Hero } from "../components";
+import { Seo, Hero, GetStarted } from "../components";
 import Layout from "../layout"
 import { TextImage } from "../components/TextImage";
 
@@ -11,6 +11,7 @@ const IndexPage = () => {
       <Layout>
         <Hero />
         <TextImage />
+        <GetStarted />
       </Layout>
     </main>
   )
