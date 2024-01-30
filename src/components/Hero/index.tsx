@@ -10,6 +10,7 @@ const Hero = () => {
           xs: "112px",
           md: "168px",
         },
+        mb: 12
       }}
     >
       <Container maxWidth="lg" sx={{
@@ -36,7 +37,10 @@ const Hero = () => {
         <Button
           variant="contained"
           sx={{
-            padding: "8px 16px",
+            padding: {
+              xs: "12px 0",
+              md: "12px 40px"
+            },
             width: {
               xs: "100%",
               md: "unset"

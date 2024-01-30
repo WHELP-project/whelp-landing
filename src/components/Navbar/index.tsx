@@ -51,6 +51,7 @@ const Navbar = () => {
             xs: "5px 0",
             md: "12px 0",
           },
+          boxShadow: "none"
         }}
       >
         <Container maxWidth="lg">
