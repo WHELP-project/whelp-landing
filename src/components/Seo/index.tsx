@@ -27,4 +27,4 @@ const Seo = () => {
   );
 };
 
-export default Seo;
+export { Seo };

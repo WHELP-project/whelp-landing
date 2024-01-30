@@ -1,14 +1,14 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
-import Seo from "../components/Seo"
+import type { HeadFC } from "gatsby"
+import { Seo, Hero } from "../components";
 import Layout from "../layout"
 
-const IndexPage: React.FC<PageProps> = () => {
+const IndexPage = () => {
   return (
     <main>
       <Seo />
       <Layout>
-        foo
+        <Hero />
       </Layout>
     </main>
   )

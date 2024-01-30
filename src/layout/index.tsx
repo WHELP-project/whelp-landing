@@ -3,7 +3,7 @@ import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 
-import Navbar from "../components/Navbar";
+import { Navbar } from "../components";
 //import Footer from "../components/Footer";
 
 import "@fontsource/inter";
@@ -14,8 +14,8 @@ const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#44CA83"
-    }
+      main: "#44CA83",
+    },
   },
   typography: {
     button: {
@@ -25,10 +25,10 @@ const theme = createTheme({
       fontStyle: "normal",
       fontWeight: 500,
       lineHeight: "24px",
-      textTransform: "none"
+      textTransform: "none",
     },
     h1: {
-      color: "#FFF", 
+      color: "#FFF",
       fontFamily: "Inter",
       fontSize: "32px",
       fontStyle: "normal",
@@ -68,8 +68,8 @@ const theme = createTheme({
       fontSize: "16px",
       fontStyle: "normal",
       fontWeight: 400,
-      lineHeight: "24px"
-    }
+      lineHeight: "24px",
+    },
   },
   components: {
     MuiContainer: {
@@ -99,7 +99,7 @@ const theme = createTheme({
           background:
             "var(--Whelp-button-primary-bg, linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.00) 100%), #44CA83)",
           textTransform: "none",
-          boxShadow: "none"
+          boxShadow: "none",
         },
       },
     },
