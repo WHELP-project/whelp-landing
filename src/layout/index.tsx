@@ -3,7 +3,7 @@ import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 
-import { Navbar } from "../components";
+import { Footer, Navbar } from "../components";
 //import Footer from "../components/Footer";
 
 import "@fontsource/inter";
@@ -129,6 +129,7 @@ const Layout = ({ children }: { children: any }) => {
         <CssBaseline />
         <Navbar />
         {children}
+        <Footer />
       </ThemeProvider>
     </>
   );
