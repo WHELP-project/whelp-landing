@@ -70,7 +70,7 @@ const Navbar = () => {
               }}
             >
               <Box mr={4}>
-                <Fade direction="down">
+                <Fade triggerOnce={true} direction="down">
                   <Logo />
                 </Fade>
               </Box>
@@ -86,7 +86,7 @@ const Navbar = () => {
                 }}
               >
 
-                <Fade direction="down" cascade={true} delay={500}>
+                <Fade triggerOnce={true} direction="down" cascade={true} delay={500}>
                   <Link
                     href={Links.TELEGRAM}
                     target="_blank"
@@ -116,7 +116,7 @@ const Navbar = () => {
                 },
               }}
             >
-              <Fade direction="down" delay={2300}>
+              <Fade triggerOnce={true} direction="down" delay={2300}>
                 <Link href={Links.APP} target="_blank">
                   <Button
                     variant="contained"

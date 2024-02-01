@@ -38,9 +38,14 @@ const TextImage = () => {
             },
           }}
         >
-          <Grid container spacing={3}>
+          <Grid container spacing={3} sx={{
+            flexDirection: {
+              xs: "reverse-row",
+              md: "row"
+            }
+          }}>
             <Grid item xs={12} md={6}>
-              <Fade direction="left" cascade={true} damping={0.2}>
+              <Fade triggerOnce={true} direction="left" cascade={true} damping={0.2}>
                 <Typography variant="h2" mb={3}>
                   Swap tokens fast and easy
                 </Typography>
@@ -54,7 +59,7 @@ const TextImage = () => {
               </Fade>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Fade direction="right">
+              <Fade triggerOnce={true} direction="right">
                 <Box component="img" src={TextImageBg1} />
               </Fade>
             </Grid>
@@ -73,12 +78,12 @@ const TextImage = () => {
 
           <Grid container spacing={3} className="reverseGrid">
             <Grid item xs={12} md={6}>
-              <Fade direction="left">
+              <Fade triggerOnce={true} direction="left">
                 <Box component="img" src={TextImageBg1} />
               </Fade>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Fade direction="right" cascade={true} damping={0.2}>
+              <Fade triggerOnce={true} direction="right" cascade={true} damping={0.2}>
                 <Typography variant="h2" mb={3}>
                   Swap tokens fast and easy
                 </Typography>

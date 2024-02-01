@@ -10,7 +10,7 @@ const Hero = () => {
     <Box
       sx={{
         marginTop: {
-          xs: "112px",
+          xs: "160px",
           md: "168px",
         },
         mb: 12,
@@ -22,6 +22,10 @@ const Hero = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          padding: {
+            xs: "0 32px",
+            md: "0"
+          }
         }}
       >
         <Box
@@ -40,7 +44,7 @@ const Hero = () => {
             }}
           />
         </Box>
-        <Fade direction="down">
+        <Fade triggerOnce={true} direction="down">
           <Typography variant="h1" mb={3}>
             Lorem ipsum dolor sit amet
           </Typography>
@@ -49,12 +53,21 @@ const Hero = () => {
             Hub
           </Typography>
         </Fade>
-        <Link href={Links.APP} target="_blank">
+        <Link
+          href={Links.APP}
+          target="_blank"
+          sx={{
+            width: {
+              xs: "100%",
+              md: "unset",
+            },
+          }}
+        >
           <Button
             variant="contained"
             sx={{
               padding: {
-                xs: "12px 0",
+                xs: "12px 24px",
                 md: "12px 40px",
               },
               width: {
@@ -70,7 +83,24 @@ const Hero = () => {
             Launch
           </Button>
         </Link>
-        <Box component="img" src={HeroAppPreview} />
+        <Box
+          component="img"
+          sx={{
+            maxWidth: {
+              xs: "unset",
+              md: "100%",
+            },
+            width: {
+              xs: "150vw",
+              md: "unset",
+            },
+            marginLeft: {
+              xs: "40vw",
+              md: 0,
+            },
+          }}
+          src={HeroAppPreview}
+        />
       </Container>
     </Box>
   );

@@ -74,7 +74,7 @@ const GetStarted = () => {
           }}
         >
           <Grid item xs={12} md={4} sx={BoxStyle}>
-            <Fade>
+            <Fade triggerOnce={true}>
               <Typography variant="body2">Privacy</Typography>
               <Typography variant="body1">
                 Lorem ipsum dolor sit amet consectetur. Cursus egestas sit purus
@@ -83,7 +83,7 @@ const GetStarted = () => {
             </Fade>
           </Grid>
           <Grid item xs={12} md={4} sx={BoxStyle}>
-            <Fade delay={500}>
+            <Fade triggerOnce={true} delay={500}>
               <Typography variant="body2">Privacy</Typography>
               <Typography variant="body1">
                 Lorem ipsum dolor sit amet consectetur. Cursus egestas sit purus
@@ -92,7 +92,7 @@ const GetStarted = () => {
             </Fade>
           </Grid>
           <Grid item xs={12} md={4} sx={BoxStyle}>
-          <Fade delay={1000}>
+          <Fade triggerOnce={true} delay={1000}>
               <Typography variant="body2">Privacy</Typography>
               <Typography variant="body1">
                 Lorem ipsum dolor sit amet consectetur. Cursus egestas sit purus
