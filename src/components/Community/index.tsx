@@ -4,6 +4,7 @@ import X from "../../assets/X.svg";
 import Telegram from "../../assets/Telegram.svg";
 
 import Links from "../../links";
+import { Zoom } from "react-awesome-reveal";
 
 const BoxStyle = {
   padding: "24px",
@@ -19,9 +20,10 @@ const BoxStyle = {
   textDecoration: "none",
   cursor: "pointer",
   "&:hover": {
-    borderColor: "1px solid var(--Whelp-stroke-secondary, rgba(255, 255, 255, 0.10));"
+    borderColor:
+      "1px solid var(--Whelp-stroke-secondary, rgba(255, 255, 255, 0.10));",
   },
-  transition: "border 500ms ease-out"
+  transition: "border 500ms ease-out",
 };
 
 const IconBoxStyle = {

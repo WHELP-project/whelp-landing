@@ -40,7 +40,7 @@ const TextImage = () => {
         >
           <Grid container spacing={3}>
             <Grid item xs={12} md={6}>
-              <Fade direction="left">
+              <Fade direction="left" cascade={true} damping={0.2}>
                 <Typography variant="h2" mb={3}>
                   Swap tokens fast and easy
                 </Typography>
@@ -78,7 +78,7 @@ const TextImage = () => {
               </Fade>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Fade direction="right">
+              <Fade direction="right" cascade={true} damping={0.2}>
                 <Typography variant="h2" mb={3}>
                   Swap tokens fast and easy
                 </Typography>
