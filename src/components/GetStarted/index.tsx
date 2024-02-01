@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import GetStartedBg from "../../assets/GetStartedBg.svg";
+import { Fade } from "react-awesome-reveal";
 import GetStartedBgMobile from "../../assets/GetStartedBgMobile.svg";
 
 const BoxStyle = {
@@ -19,12 +20,14 @@ const BoxStyle = {
 
 const GetStarted = () => {
   return (
-    <Box sx={{
-      mb: {
-        xs: 8,
-        md: 18
-      }
-    }}>
+    <Box
+      sx={{
+        mb: {
+          xs: 8,
+          md: 18,
+        },
+      }}
+    >
       <Container maxWidth="lg">
         <Box mb={5}>
           <Box
@@ -59,35 +62,43 @@ const GetStarted = () => {
             risus enim eu porttitor. Enim morbi orci sit turpis.
           </Typography>
         </Box>
-        <Box sx={{ 
-          display: "flex", 
-          flexDirection: {
-            xs: "column",
-            md: "row"
-          },
-          justifyContent: "space-between", 
-          gap: 3,
-        }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: {
+              xs: "column",
+              md: "row",
+            },
+            justifyContent: "space-between",
+            gap: 3,
+          }}
+        >
           <Grid item xs={12} md={4} sx={BoxStyle}>
-            <Typography variant="body2">Privacy</Typography>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet consectetur. Cursus egestas sit purus
-              id risus enim eu porttitor. Enim morbi orci sit turpis.
-            </Typography>
+            <Fade>
+              <Typography variant="body2">Privacy</Typography>
+              <Typography variant="body1">
+                Lorem ipsum dolor sit amet consectetur. Cursus egestas sit purus
+                id risus enim eu porttitor. Enim morbi orci sit turpis.
+              </Typography>
+            </Fade>
           </Grid>
           <Grid item xs={12} md={4} sx={BoxStyle}>
-            <Typography variant="body2">Privacy</Typography>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet consectetur. Cursus egestas sit purus
-              id risus enim eu porttitor. Enim morbi orci sit turpis.
-            </Typography>
+            <Fade delay={500}>
+              <Typography variant="body2">Privacy</Typography>
+              <Typography variant="body1">
+                Lorem ipsum dolor sit amet consectetur. Cursus egestas sit purus
+                id risus enim eu porttitor. Enim morbi orci sit turpis.
+              </Typography>
+            </Fade>
           </Grid>
           <Grid item xs={12} md={4} sx={BoxStyle}>
-            <Typography variant="body2">Privacy</Typography>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet consectetur. Cursus egestas sit purus
-              id risus enim eu porttitor. Enim morbi orci sit turpis.
-            </Typography>
+          <Fade delay={1000}>
+              <Typography variant="body2">Privacy</Typography>
+              <Typography variant="body1">
+                Lorem ipsum dolor sit amet consectetur. Cursus egestas sit purus
+                id risus enim eu porttitor. Enim morbi orci sit turpis.
+              </Typography>
+            </Fade>
           </Grid>
         </Box>
       </Container>
