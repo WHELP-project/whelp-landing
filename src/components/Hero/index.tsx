@@ -3,6 +3,7 @@ import HeroBg from "../../assets/HeroBg.svg";
 import HeroAppPreview from "../../images/HeroAppPreview.png";
 
 import Links from "../../links";
+import { Fade } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
@@ -39,12 +40,15 @@ const Hero = () => {
             }}
           />
         </Box>
-        <Typography variant="h1" mb={3}>
-          Lorem ipsum dolor sit amet
-        </Typography>
-        <Typography variant="body1" mb={3}>
-          Swap, earn and build on the leading decentralized Cross Chain DeFi Hub
-        </Typography>
+        <Fade direction="down">
+          <Typography variant="h1" mb={3}>
+            Lorem ipsum dolor sit amet
+          </Typography>
+          <Typography variant="body1" mb={3}>
+            Swap, earn and build on the leading decentralized Cross Chain DeFi
+            Hub
+          </Typography>
+        </Fade>
         <Link href={Links.APP} target="_blank">
           <Button
             variant="contained"
@@ -66,7 +70,7 @@ const Hero = () => {
             Launch
           </Button>
         </Link>
-        <Box component="img" src={HeroAppPreview} sx={{}} />
+        <Box component="img" src={HeroAppPreview} />
       </Container>
     </Box>
   );
