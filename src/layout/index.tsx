@@ -110,6 +110,10 @@ const theme = createTheme({
             "var(--Whelp-button-primary-bg, linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.00) 100%), #44CA83)",
           textTransform: "none",
           boxShadow: "none",
+          "&:hover": {
+            border: "1px solid #44CA83",
+            background: "var(--Whelp-button-primary-bg, linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.00) 100%), #44CA83)"
+          },
         },
       },
     },
