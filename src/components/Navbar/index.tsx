@@ -85,7 +85,8 @@ const Navbar = () => {
                   alignItems: "center",
                 }}
               >
-                <Fade direction="down">
+
+                <Fade direction="down" cascade={true} delay={500}>
                   <Link
                     href={Links.TELEGRAM}
                     target="_blank"
@@ -93,13 +94,9 @@ const Navbar = () => {
                   >
                     <Telegram />
                   </Link>
-                </Fade>
-                <Fade direction="down">
                   <Link href={Links.X} target="_blank" sx={socialIconStyle}>
                     <X />
                   </Link>
-                </Fade>
-                <Fade direction="down">
                   <Link
                     href={Links.DISCORD}
                     target="_blank"
@@ -107,7 +104,7 @@ const Navbar = () => {
                   >
                     <Discord />
                   </Link>
-                </Fade>
+                  </Fade>
               </Box>
             </Box>
             <Box
@@ -119,7 +116,7 @@ const Navbar = () => {
                 },
               }}
             >
-              <Fade triggerOnce direction="down" delay={1000}>
+              <Fade direction="down" delay={2300}>
                 <Link href={Links.APP} target="_blank">
                   <Button
                     variant="contained"
