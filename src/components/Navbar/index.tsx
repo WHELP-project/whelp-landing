@@ -16,6 +16,8 @@ import Telegram from "../../assets/Telegram.svg";
 import X from "../../assets/X.svg";
 import Discord from "../../assets/Discord.svg";
 
+import Links from "../../links";
+
 const socialIconStyle = {
   padding: "6px",
   borderRadius: "999px",
@@ -51,7 +53,7 @@ const Navbar = () => {
             xs: "5px 0",
             md: "12px 0",
           },
-          boxShadow: "none"
+          boxShadow: "none",
         }}
       >
         <Container maxWidth="lg">
@@ -84,17 +86,25 @@ const Navbar = () => {
                 }}
               >
                 <Fade direction="down">
-                  <Link href="#" sx={socialIconStyle}>
+                  <Link
+                    href={Links.TELEGRAM}
+                    target="_blank"
+                    sx={socialIconStyle}
+                  >
                     <Telegram />
                   </Link>
                 </Fade>
                 <Fade direction="down">
-                  <Link href="#" sx={socialIconStyle}>
+                  <Link href={Links.X} target="_blank" sx={socialIconStyle}>
                     <X />
                   </Link>
                 </Fade>
                 <Fade direction="down">
-                  <Link href="#" sx={socialIconStyle}>
+                  <Link
+                    href={Links.DISCORD}
+                    target="_blank"
+                    sx={socialIconStyle}
+                  >
                     <Discord />
                   </Link>
                 </Fade>
@@ -110,19 +120,21 @@ const Navbar = () => {
               }}
             >
               <Fade triggerOnce direction="down" delay={1000}>
-                <Button
-                  variant="contained"
-                  sx={{
-                    padding: "8px 16px",
-                  }}
-                >
-                  <Typography variant="button">Launch</Typography>
-                  <NorthEastIcon
+                <Link href={Links.APP} target="_blank">
+                  <Button
+                    variant="contained"
                     sx={{
-                      color: "#0A0C0F",
+                      padding: "8px 16px",
                     }}
-                  />
-                </Button>
+                  >
+                    <Typography variant="button">Launch</Typography>
+                    <NorthEastIcon
+                      sx={{
+                        color: "#0A0C0F",
+                      }}
+                    />
+                  </Button>
+                </Link>
               </Fade>
             </Box>
           </Toolbar>
