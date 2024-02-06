@@ -1,6 +1,5 @@
 import { Box, Button, Container, Link, Typography } from "@mui/material";
 import HeroBg from "../../assets/HeroBg.svg";
-import HeroAppPreview from "../../images/HeroAppPreview.png";
 
 import Links from "../../links";
 import { Fade } from "react-awesome-reveal";
@@ -103,7 +102,7 @@ const Hero = () => {
               md: 0,
             },
           }}
-          src={HeroAppPreview}
+          src={"/images/HeroAppPreview.png"}
         />
       </Container>
     </Box>

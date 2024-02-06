@@ -1,7 +1,5 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Divider from "../../assets/Divider.svg";
-import TextImageBg1 from "../../images/TextImageBg1.png";
-import TextImageBg2 from "../../images/TextImageBg2.png";
 import { Fade, Slide } from "react-awesome-reveal";
 
 const ButtonStyle = {
@@ -10,7 +8,8 @@ const ButtonStyle = {
   background: "rgba(255, 255, 255, 0.02)",
   "&:hover": {
     background: "rgba(255, 255, 255, 0.02)",
-    borderColor: "1px solid var(--Whelp-stroke-secondary, rgba(255, 255, 255, 0.10))",
+    borderColor:
+      "1px solid var(--Whelp-stroke-secondary, rgba(255, 255, 255, 0.10))",
   },
   color: "#FFF",
   padding: "12px 24px",
@@ -42,14 +41,23 @@ const TextImage = () => {
             },
           }}
         >
-          <Grid container spacing={3} sx={{
-            flexDirection: {
-              xs: "reverse-row",
-              md: "row"
-            }
-          }}>
+          <Grid
+            container
+            spacing={3}
+            sx={{
+              flexDirection: {
+                xs: "reverse-row",
+                md: "row",
+              },
+            }}
+          >
             <Grid item xs={12} md={6}>
-              <Fade triggerOnce={true} direction="left" cascade={true} damping={0.2}>
+              <Fade
+                triggerOnce={true}
+                direction="left"
+                cascade={true}
+                damping={0.2}
+              >
                 <Typography variant="h2" mb={3}>
                   Swap tokens fast and easy
                 </Typography>
@@ -64,7 +72,7 @@ const TextImage = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Fade triggerOnce={true} direction="right">
-                <Box component="img" src={TextImageBg1} />
+                <Box component="img" src={"/images/TextImageBg1.png"} />
               </Fade>
             </Grid>
           </Grid>
@@ -83,11 +91,16 @@ const TextImage = () => {
           <Grid container spacing={3} className="reverseGrid">
             <Grid item xs={12} md={6}>
               <Fade triggerOnce={true} direction="left">
-                <Box component="img" src={TextImageBg1} />
+                <Box component="img" src={"/images/TextImageBg1.png"} />
               </Fade>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Fade triggerOnce={true} direction="right" cascade={true} damping={0.2}>
+              <Fade
+                triggerOnce={true}
+                direction="right"
+                cascade={true}
+                damping={0.2}
+              >
                 <Typography variant="h2" mb={3}>
                   Swap tokens fast and easy
                 </Typography>
