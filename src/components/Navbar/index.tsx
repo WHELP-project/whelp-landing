@@ -22,6 +22,9 @@ const socialIconStyle = {
   padding: "6px",
   borderRadius: "999px",
   background: "rgba(255, 255, 255, 0.04)",
+  "&:hover": {
+    background: "rgba(255, 255, 255, 0.1)",
+  },
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -122,6 +125,10 @@ const Navbar = () => {
                     variant="contained"
                     sx={{
                       padding: "8px 16px",
+                      transition: "background 1s",
+                      "&:hover": {
+                        background: "#29C772"
+                      }
                     }}
                   >
                     <Typography variant="button">Launch</Typography>

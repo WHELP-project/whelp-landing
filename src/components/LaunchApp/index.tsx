@@ -34,7 +34,7 @@ const LaunchApp = () => {
         <Typography variant="body1" mb={3} textAlign="center">
           Get started in under 3 minutes!
         </Typography>
-        <Link href={Links.APP} target="_blank" style={{margin: "0 auto"}}>
+        <Link href={Links.APP} target="_blank" style={{ margin: "0 auto" }}>
           <Button
             sx={{
               padding: "12px 24px",
@@ -43,6 +43,10 @@ const LaunchApp = () => {
               width: {
                 xs: "100%",
                 md: "unset",
+              },
+              transition: "background 1s",
+              "&:hover": {
+                background: "#29C772",
               },
             }}
           >
@@ -72,7 +76,7 @@ const LaunchApp = () => {
             md: "1128px",
           },
         }}
-      ></Box>
+      />
     </Container>
   );
 };

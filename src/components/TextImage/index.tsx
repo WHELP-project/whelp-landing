@@ -8,6 +8,10 @@ const ButtonStyle = {
   borderRadius: "12px",
   border: "1px solid rgba(255, 255, 255, 0.10)",
   background: "rgba(255, 255, 255, 0.02)",
+  "&:hover": {
+    background: "rgba(255, 255, 255, 0.02)",
+    borderColor: "1px solid var(--Whelp-stroke-secondary, rgba(255, 255, 255, 0.10))",
+  },
   color: "#FFF",
   padding: "12px 24px",
   width: {

@@ -1,8 +1,10 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Link, Typography } from "@mui/material";
 import Logo from "../../assets/Logo.svg";
 import Telegram from "../../assets/Telegram.svg";
 import X from "../../assets/X.svg";
 import Discord from "../../assets/Discord.svg";
+
+import Links from "../../links";
 
 const IconBoxStyle = {
   height: "36px",
@@ -12,6 +14,9 @@ const IconBoxStyle = {
   alignItems: "center",
   borderRadius: "50%",
   background: "var(--Whelp-bg-alpha-25, rgba(255, 255, 255, 0.04))",
+  "&:hover": {
+    background: "rgba(255, 255, 255, 0.1)",
+  },
 };
 
 const IconDivider = () => (
@@ -118,17 +123,17 @@ const Footer = () => {
             }
           }}
         >
-          <Box sx={IconBoxStyle}>
+          <Link href={Links.TELEGRAM} target="_blank" sx={IconBoxStyle}>
             <Telegram style={{ maxWidth: "24px" }} />
-          </Box>
+          </Link>
           <IconDivider />
-          <Box sx={IconBoxStyle}>
+          <Link href={Links.X} target="_blank" sx={IconBoxStyle}>
             <X style={{ maxWidth: "24px" }} />
-          </Box>
+          </Link>
           <IconDivider />
-          <Box sx={IconBoxStyle}>
+          <Link href={Links.DISCORD} target="_blank" sx={IconBoxStyle}>
             <Discord style={{ maxWidth: "24px" }} />
-          </Box>
+          </Link>
         </Box>
         <CopyrightBox type="xs" />
       </Container>

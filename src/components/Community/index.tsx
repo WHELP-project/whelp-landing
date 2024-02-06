@@ -21,7 +21,7 @@ const BoxStyle = {
   cursor: "pointer",
   "&:hover": {
     borderColor:
-      "1px solid var(--Whelp-stroke-secondary, rgba(255, 255, 255, 0.10));",
+      "1px solid var(--Whelp-stroke-secondary, rgba(255, 255, 255, 0.10))",
   },
   transition: "border 500ms ease-out",
 };

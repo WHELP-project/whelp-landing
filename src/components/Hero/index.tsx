@@ -24,8 +24,8 @@ const Hero = () => {
           alignItems: "center",
           padding: {
             xs: "0 32px",
-            md: "0"
-          }
+            md: "0",
+          },
         }}
       >
         <Box
@@ -77,6 +77,10 @@ const Hero = () => {
               mb: {
                 xs: 3,
                 md: 8,
+              },
+              transition: "background 1s",
+              "&:hover": {
+                background: "#29C772",
               },
             }}
           >
