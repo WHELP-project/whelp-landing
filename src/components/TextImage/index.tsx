@@ -91,7 +91,7 @@ const TextImage = () => {
           <Grid container spacing={3} className="reverseGrid">
             <Grid item xs={12} md={6}>
               <Fade triggerOnce={true} direction="left">
-                <Box component="img" src={"/images/TextImageBg1.png"} />
+                <Box component="img" src={"/images/TextImageBg2.png"} />
               </Fade>
             </Grid>
             <Grid item xs={12} md={6}>
