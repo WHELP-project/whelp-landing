@@ -12,7 +12,6 @@ const IndexPage = () => {
         <Hero />
         <TextImage />
         <GetStarted />
-        <Numbers />
         <Community />
         <LaunchApp />
       </Layout>

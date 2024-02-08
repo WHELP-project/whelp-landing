@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 
 import Logo from "../../assets/Logo.svg";
-import Telegram from "../../assets/Telegram.svg";
+import Github from "../../assets/Github.svg";
 import X from "../../assets/X.svg";
 import Discord from "../../assets/Discord.svg";
 
@@ -91,11 +91,11 @@ const Navbar = () => {
 
                 <Fade triggerOnce={true} direction="down" cascade={true} delay={500}>
                   <Link
-                    href={Links.TELEGRAM}
+                    href={Links.GITHUB}
                     target="_blank"
                     sx={socialIconStyle}
                   >
-                    <Telegram />
+                    <Github />
                   </Link>
                   <Link href={Links.X} target="_blank" sx={socialIconStyle}>
                     <X />

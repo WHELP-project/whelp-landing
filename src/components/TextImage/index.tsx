@@ -19,6 +19,16 @@ const ButtonStyle = {
   },
 };
 
+const imageStyle = {
+  border: "1px solid #FFFFFF1A",
+  borderRadius: "16px",
+  maxHeight: "328px",
+  width: "100%",
+  overflow: "hidden",
+  display: "flex",
+  alignItems: "center",
+};
+
 const TextImage = () => {
   return (
     <Box
@@ -27,6 +37,10 @@ const TextImage = () => {
           xs: 12,
           md: 24,
         },
+        mt: {
+          xs: -7,
+          md: 0
+        }
       }}
     >
       <Container>
@@ -59,27 +73,34 @@ const TextImage = () => {
                 damping={0.2}
               >
                 <Typography variant="h2" mb={3}>
-                  Swap tokens fast and easy
+                  Swap Tokens
                 </Typography>
                 <Typography variant="body1" mb={3}>
-                  Lorem ipsum dolor sit amet consectetur. Cursus egestas sit
-                  purus id risus enim eu porttitor. Enim morbi orci sit turpis.
-                  Nulla pulvinar suspendisse nibh commodo posuere fermentum sed.
-                  Vitae mi massa erat consequat cursus.
+                  Whelp DEX enables seamless swapping and liquidity provision
+                  for smart tokens, allowing users to access the vibrant DeFi
+                  ecosystem on Coreum and Cosmos with ease.
                 </Typography>
-                <Button sx={ButtonStyle}>Learn More</Button>
+                <Button target="_blank" href="https://app.whelp-hub.io/swap" sx={ButtonStyle}>Learn More</Button>
               </Fade>
             </Grid>
             <Grid item xs={12} md={6}>
               <Fade triggerOnce={true} direction="right">
-                <Box component="img" src={"/images/TextImageBg1.png"} />
+                <Box sx={imageStyle}>
+                  <Box
+                    component="img"
+                    src={"/images/TextImageBg1.png"}
+                    sx={{
+                      width: "100%",
+                    }}
+                  />
+                </Box>
               </Fade>
             </Grid>
           </Grid>
 
           <Box
-            mb={3}
-            mt={2}
+            mb={8}
+            mt={7}
             sx={{
               maxWidth: "100%",
               overflowX: "hidden",
@@ -91,7 +112,15 @@ const TextImage = () => {
           <Grid container spacing={3} className="reverseGrid">
             <Grid item xs={12} md={6}>
               <Fade triggerOnce={true} direction="left">
-                <Box component="img" src={"/images/TextImageBg2.png"} />
+                <Box sx={imageStyle}>
+                  <Box
+                    component="img"
+                    src={"/images/TextImageBg2.png"}
+                    sx={{
+                      width: "100%",
+                    }}
+                  />
+                </Box>
               </Fade>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -102,15 +131,12 @@ const TextImage = () => {
                 damping={0.2}
               >
                 <Typography variant="h2" mb={3}>
-                  Swap tokens fast and easy
+                  Whelp's Vision
                 </Typography>
                 <Typography variant="body1" mb={3}>
-                  Lorem ipsum dolor sit amet consectetur. Cursus egestas sit
-                  purus id risus enim eu porttitor. Enim morbi orci sit turpis.
-                  Nulla pulvinar suspendisse nibh commodo posuere fermentum sed.
-                  Vitae mi massa erat consequat cursus.
+                  Whelp will implement a hub of DeFi protocols that synergize and drive value to the ecosystem, offering a comprehensive suite of financial tools and services to empower users and facilitate the evolution of decentralized finance on both Coreum and Cosmos blockchains.
                 </Typography>
-                <Button sx={ButtonStyle}>Learn More</Button>
+                <Button sx={ButtonStyle} disabled>Learn More</Button>
               </Fade>
             </Grid>
           </Grid>

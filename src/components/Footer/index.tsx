@@ -1,6 +1,6 @@
 import { Box, Container, Link, Typography } from "@mui/material";
 import Logo from "../../assets/Logo.svg";
-import Telegram from "../../assets/Telegram.svg";
+import Github from "../../assets/Github.svg";
 import X from "../../assets/X.svg";
 import Discord from "../../assets/Discord.svg";
 
@@ -50,7 +50,7 @@ const CopyrightBox = ({type}: {type: "xs" | "md"}) => (
       }
     }}
   >
-    Copyright © 2023 Whelp. All rights reserved.
+    Copyright © {new Date().getFullYear()} Whelp. All rights reserved.
   </Typography>
 );
 
@@ -123,8 +123,8 @@ const Footer = () => {
             }
           }}
         >
-          <Link href={Links.TELEGRAM} target="_blank" sx={IconBoxStyle}>
-            <Telegram style={{ maxWidth: "24px" }} />
+          <Link href={Links.GITHUB} target="_blank" sx={IconBoxStyle}>
+            <Github style={{ maxWidth: "24px" }} />
           </Link>
           <IconDivider />
           <Link href={Links.X} target="_blank" sx={IconBoxStyle}>

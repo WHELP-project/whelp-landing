@@ -1,10 +1,9 @@
 import { Box, Container, Link, Typography } from "@mui/material";
 import Github from "../../assets/Github.svg";
 import X from "../../assets/X.svg";
-import Telegram from "../../assets/Telegram.svg";
+import Discord from "../../assets/Discord.svg";
 
 import Links from "../../links";
-import { Zoom } from "react-awesome-reveal";
 
 const BoxStyle = {
   padding: "24px",
@@ -88,17 +87,16 @@ const Community = () => {
               </Typography>
             </Box>
           </Link>
-          <Link sx={BoxStyle} target="_blank" href={Links.TELEGRAM}>
+          <Link sx={BoxStyle} target="_blank" href={Links.DISCORD}>
             <Box sx={IconBoxStyle}>
-              <Telegram style={{ width: "32px" }} />
+              <Discord style={{ width: "32px" }} />
             </Box>
             <Box>
               <Typography variant="body2" mb={1}>
-                Telegram
+                Discord
               </Typography>
               <Typography variant="body1">
-                Follow the latest our news about the Web3 Space and our latest
-                product updates.
+                Follow our Discord community to stay updated all things Whelp!
               </Typography>
             </Box>
           </Link>

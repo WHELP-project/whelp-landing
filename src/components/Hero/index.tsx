@@ -45,11 +45,10 @@ const Hero = () => {
         </Box>
         <Fade triggerOnce={true} direction="down">
           <Typography variant="h1" mb={3}>
-            Lorem ipsum dolor sit amet
+            Smart Token DeFi Hub on Coreum
           </Typography>
           <Typography variant="body1" mb={3}>
-            Swap, earn and build on the leading decentralized Cross Chain DeFi
-            Hub
+            Swap, earn and more on the leading decentralized Cross Chain DeFi Hub
           </Typography>
         </Fade>
         <Link
