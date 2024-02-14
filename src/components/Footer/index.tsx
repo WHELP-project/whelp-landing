@@ -123,16 +123,16 @@ const Footer = () => {
             }
           }}
         >
-          <Link href={Links.GITHUB} target="_blank" sx={IconBoxStyle}>
-            <Github style={{ maxWidth: "24px" }} />
-          </Link>
-          <IconDivider />
           <Link href={Links.X} target="_blank" sx={IconBoxStyle}>
             <X style={{ maxWidth: "24px" }} />
           </Link>
           <IconDivider />
           <Link href={Links.DISCORD} target="_blank" sx={IconBoxStyle}>
             <Discord style={{ maxWidth: "24px" }} />
+          </Link>
+          <IconDivider />
+          <Link href={Links.GITHUB} target="_blank" sx={IconBoxStyle}>
+            <Github style={{ maxWidth: "24px" }} />
           </Link>
         </Box>
         <CopyrightBox type="xs" />
