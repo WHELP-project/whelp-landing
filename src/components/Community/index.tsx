@@ -59,20 +59,6 @@ const Community = () => {
             margin: "0 auto",
           }}
         >
-          <Link sx={BoxStyle} target="_blank" href={Links.GITHUB}>
-            <Box sx={IconBoxStyle}>
-              <Github style={{ width: "32px" }} />
-            </Box>
-            <Box>
-              <Typography variant="body2" mb={1}>
-                Github
-              </Typography>
-              <Typography variant="body1">
-                Follow our repo on Github and stay on top of latest updates,
-                projects and announcements.
-              </Typography>
-            </Box>
-          </Link>
           <Link sx={BoxStyle} target="_blank" href={Links.X}>
             <Box sx={IconBoxStyle}>
               <X style={{ width: "32px", position: "absolute" }} />
@@ -97,6 +83,20 @@ const Community = () => {
               </Typography>
               <Typography variant="body1">
                 Follow our Discord community to stay updated all things Whelp!
+              </Typography>
+            </Box>
+          </Link>
+          <Link sx={BoxStyle} target="_blank" href={Links.GITHUB}>
+            <Box sx={IconBoxStyle}>
+              <Github style={{ width: "32px" }} />
+            </Box>
+            <Box>
+              <Typography variant="body2" mb={1}>
+                Github
+              </Typography>
+              <Typography variant="body1">
+                Follow our repo on Github and stay on top of latest updates,
+                projects and announcements.
               </Typography>
             </Box>
           </Link>
