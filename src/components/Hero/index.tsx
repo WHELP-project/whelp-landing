@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        marginTop: {
+        paddingTop: {
           xs: "160px",
           md: "168px",
         },
@@ -44,7 +44,12 @@ const Hero = () => {
           />
         </Box>
         <Fade triggerOnce={true} direction="down">
-          <Typography variant="h1" mb={3} textAlign="center">
+          <Typography variant="h1" mb={3} textAlign="center" sx={{
+            maxWidth: {
+              xs: "250px",
+              md: "unset"
+            }
+          }}>
             Smart Token DeFi Hub
             <Box
               sx={{
@@ -55,7 +60,10 @@ const Hero = () => {
             >
               <Box
                 sx={{
-                  mt: 1,
+                  mt: {
+                    xs: 0.5,
+                    md: 1
+                  }
                 }}
               >
                 on
@@ -64,7 +72,7 @@ const Hero = () => {
                 component="img"
                 src={"/images/coreum-logo.png"}
                 sx={{
-                  maxWidth: { xs: "160px", md: "280px" },
+                  maxWidth: { xs: "155px", md: "280px" },
                   mt: {
                     xs: 1,
                     md: 2,
