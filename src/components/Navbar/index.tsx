@@ -88,15 +88,12 @@ const Navbar = () => {
                   alignItems: "center",
                 }}
               >
-
-                <Fade triggerOnce={true} direction="down" cascade={true} delay={500}>
-                  <Link
-                    href={Links.GITHUB}
-                    target="_blank"
-                    sx={socialIconStyle}
-                  >
-                    <Github />
-                  </Link>
+                <Fade
+                  triggerOnce={true}
+                  direction="down"
+                  cascade={true}
+                  delay={500}
+                >
                   <Link href={Links.X} target="_blank" sx={socialIconStyle}>
                     <X />
                   </Link>
@@ -107,7 +104,14 @@ const Navbar = () => {
                   >
                     <Discord />
                   </Link>
-                  </Fade>
+                  <Link
+                    href={Links.GITHUB}
+                    target="_blank"
+                    sx={socialIconStyle}
+                  >
+                    <Github />
+                  </Link>
+                </Fade>
               </Box>
             </Box>
             <Box
@@ -127,8 +131,8 @@ const Navbar = () => {
                       padding: "8px 16px",
                       transition: "background 1s",
                       "&:hover": {
-                        background: "#29C772"
-                      }
+                        background: "#29C772",
+                      },
                     }}
                   >
                     <Typography variant="button">Launch</Typography>
