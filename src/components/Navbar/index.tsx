@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Container,
+  IconButton,
   Link,
   Toolbar,
   Typography,
@@ -17,6 +18,7 @@ import X from "../../assets/X.svg";
 import Discord from "../../assets/Discord.svg";
 
 import Links from "../../links";
+import { Menu } from "@mui/icons-material";
 
 const socialIconStyle = {
   padding: "6px",
@@ -30,8 +32,21 @@ const socialIconStyle = {
   alignItems: "center",
 };
 
+const socialIconStyleMobile = {
+  padding: "6px",
+  width: "100%",
+  textAlign: "center",
+  textDecoration: "none",
+  display: "block",
+  fontWeight: 700,
+  fontSize: "20px",
+  lineHeight: "24px"
+};
+
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
+
+  const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -113,6 +128,47 @@ const Navbar = () => {
                   </Link>
                 </Fade>
               </Box>
+
+              {mobileNavOpen && (
+                <Box
+                  sx={{
+                    position: "fixed",
+                    top: "66px",
+                    left: 0,
+                    width: "100vw",
+                    background: "#0A0F10",
+                    pb: 3,
+                    pt: 2,
+                    border: "1px solid rgba(255, 255, 255, 0.10)",
+                    borderBottomRightRadius: "16px",
+                    borderBottomLeftRadius: "16px",
+                  }}
+                >
+                  <Container maxWidth="lg">
+                    <Link
+                      href={Links.X}
+                      target="_blank"
+                      sx={socialIconStyleMobile}
+                    >
+                      X
+                    </Link>
+                    <Link
+                      href={Links.DISCORD}
+                      target="_blank"
+                      sx={socialIconStyleMobile}
+                    >
+                      Discord
+                    </Link>
+                    <Link
+                      href={Links.GITHUB}
+                      target="_blank"
+                      sx={socialIconStyleMobile}
+                    >
+                      Github
+                    </Link>
+                  </Container>
+                </Box>
+              )}
             </Box>
             <Box
               sx={{
@@ -123,7 +179,7 @@ const Navbar = () => {
                 },
               }}
             >
-              <Fade triggerOnce={true} direction="down" delay={2300}>
+              <Fade triggerOnce={true} direction="down" delay={2300} cascade={true}>
                 <Link href={Links.APP} target="_blank">
                   <Button
                     variant="contained"
@@ -143,6 +199,20 @@ const Navbar = () => {
                     />
                   </Button>
                 </Link>
+                <IconButton
+                  onClick={() => {
+                    setMobileNavOpen(!mobileNavOpen);
+                  }}
+                  sx={{
+                    ml: 2,
+                    display: {
+                      xs: "block",
+                      md: "none",
+                    },
+                  }}
+                >
+                  <Menu />
+                </IconButton>
               </Fade>
             </Box>
           </Toolbar>
