@@ -44,11 +44,39 @@ const Hero = () => {
           />
         </Box>
         <Fade triggerOnce={true} direction="down">
-          <Typography variant="h1" mb={3}>
-            Smart Token DeFi Hub on Coreum
+          <Typography variant="h1" mb={3} textAlign="center">
+            Smart Token DeFi Hub
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Box
+                sx={{
+                  mt: 1,
+                }}
+              >
+                on
+              </Box>
+              <Box
+                component="img"
+                src={"/images/coreum-logo.png"}
+                sx={{
+                  maxWidth: { xs: "160px", md: "280px" },
+                  mt: {
+                    xs: 1,
+                    md: 2,
+                  },
+                  ml: 2,
+                }}
+              />
+            </Box>
           </Typography>
           <Typography variant="body1" mb={3}>
-            Swap, earn and more on the leading decentralized Cross Chain DeFi Hub
+            Swap, earn and more on the leading decentralized Cross Chain DeFi
+            Hub
           </Typography>
         </Fade>
         <Link
