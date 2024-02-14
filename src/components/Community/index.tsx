@@ -82,7 +82,7 @@ const Community = () => {
                 Discord
               </Typography>
               <Typography variant="body1">
-                Follow our Discord community to stay updated all things Whelp!
+                Join our Discord community to discuss and shape the future of the Whelp ecosytem.
               </Typography>
             </Box>
           </Link>
@@ -92,11 +92,10 @@ const Community = () => {
             </Box>
             <Box>
               <Typography variant="body2" mb={1}>
-                Github
+                GitHub
               </Typography>
               <Typography variant="body1">
-                Follow our repo on Github and stay on top of latest updates,
-                projects and announcements.
+                Check out our repo on GitHub to keep track of the latest Whelp developments.
               </Typography>
             </Box>
           </Link>
