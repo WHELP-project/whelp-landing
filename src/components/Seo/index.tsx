@@ -15,7 +15,7 @@ const Seo = () => {
       <link
         rel="icon"
         type="image/png"
-        href="/images/favicon.png"
+        href="/images/favicon.ico"
         sizes="32x32"
       ></link>
       <meta name="robots" content="index,follow" />

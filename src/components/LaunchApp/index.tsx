@@ -1,6 +1,7 @@
 import { Box, Button, Container, Link, Typography } from "@mui/material";
 
 import Links from "../../links";
+import config from '../../../gatsby-config';
 
 const LaunchApp = () => {
   return (
@@ -17,7 +18,6 @@ const LaunchApp = () => {
           borderRadius: "16px",
           border:
             "1px solid var(--Whelp-stroke-secondary, rgba(255, 255, 255, 0.10))",
-          background: "#08090D",
           maxWidth: { xs: "300px", md: "936px" },
           padding: {
             xs: "64px 16px",
@@ -29,8 +29,8 @@ const LaunchApp = () => {
         }}
       >
         <Typography variant="h3" mb={3} textAlign="center">
-          Are you excited for Whelp?
-        </Typography>
+          Ready to Begin Your DeFi Adventure?
+          </Typography>
         <Typography variant="body1" mb={3} textAlign="center">
           Get started in under 3 minutes!
         </Typography>
