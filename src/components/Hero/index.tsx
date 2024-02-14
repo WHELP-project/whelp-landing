@@ -75,8 +75,7 @@ const Hero = () => {
             </Box>
           </Typography>
           <Typography variant="body1" mb={3}>
-            Swap, earn and more on the leading decentralized Cross Chain DeFi
-            Hub
+            Empower your decentralized finance journey with Whelp Hub
           </Typography>
         </Fade>
         <Link
